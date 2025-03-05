@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rift Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand" href="#">Rift Guide</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Champion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Menu Button -->
+    <div class="text-center">
+        <button class="main-menu btn btn-warning" onclick="closePopup()">MAIN MENU</button>
+    </div>
+
+    <!-- Restaurants Container -->
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="restaurant-card" onclick="openPopup('Supreme Cell Sett', 'This is the best Sett skin!', 'una.PNG')">
+                    <div class="title">Supreme Cell Sett</div>
+                    <img src="una.PNG" alt="Gabel Loffel">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="restaurant-card" onclick="openPopup('Spirit Bloosom Sett', 'Not the best skin because he is gay', 'dalwa.PNG')">
+                    <div class="title">Spirit Bloosom Sett</div>
+                    <img src="dalwa.PNG" alt="Gary Gain">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="restaurant-card" onclick="openPopup('Obsidian Sett', 'Best Classic skin ', 'tatlo.PNG')">
+                    <div class="title">Obsidian Sett</div>
+                    <img src="tatlo.PNG" alt="Il Piatto">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="restaurant-card" onclick="openPopup('Splendor Opus Sett', 'Best skin than the exalted one in Pc lol', 'apat.PNG')">
+                    <div class="title">Splendor Opus Sett</div>
+                    <img src="apat.PNG" alt="Pierre Platters">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pop-up -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2 id="popup-title"></h2>
+            <img id="popup-image" src="" alt="Restaurant Image">
+            <p id="popup-desc"></p>
+            <button class="btn btn-danger" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
